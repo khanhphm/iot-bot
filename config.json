@@ -1,0 +1,14 @@
+{
+    "clientId":"940113335595184158",
+    "guildId":"863780826634649622",
+    "token":"OTQwMTEzMzM1NTk1MTg0MTU4.YgCqxQ.tpD3VX_pUFveB2NazVlPzGdHbkE",
+    "firebaseConfig" : {
+        "apiKey": "AIzaSyDF43ydfgd4DJatKONnZMgH2i8X1ExrkZA",
+        "authDomain": "ivan-iot-bot.firebaseapp.com",
+        "databaseURL": "https://ivan-iot-bot-default-rtdb.asia-southeast1.firebasedatabase.app",
+        "projectId": "ivan-iot-bot",
+        "storageBucket": "ivan-iot-bot.appspot.com",
+        "messagingSenderId": "258844089195",
+        "appId": "1:258844089195:web:dbed107fb2115a0918ca2e"
+    }
+}
