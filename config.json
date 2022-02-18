@@ -1,7 +1,6 @@
 {
     "clientId":"940113335595184158",
     "guildId":"863780826634649622",
-    "token":"OTQwMTEzMzM1NTk1MTg0MTU4.YgCqxQ.hw16Jvxcn9nbMNA2mULNtZ9sfGI",
     "firebaseConfig" : {
         "apiKey": "AIzaSyDF43ydfgd4DJatKONnZMgH2i8X1ExrkZA",
         "authDomain": "ivan-iot-bot.firebaseapp.com",
