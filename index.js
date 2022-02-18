@@ -1,12 +1,14 @@
 const fs = require("fs");
 const { Client, Collection, Intents } = require("discord.js");
-const { clientId, guildId, token } = require("./config.json");
+const { clientId, guildId} = require("./config.json");
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord-api-types/v9");
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
-
-client.commands = new Collection();
+const dotenv = require("dotenv");
+dotenv.config();
+const token = process.env.token
+client.commands= new Collection();
 const commandFiles = fs
   .readdirSync("./commands")
   .filter((file) => file.endsWith(".js"));
@@ -39,9 +41,9 @@ client.once("ready", () => {
   const db = getDatabase();
   onValue(ref(db, "intrusion"), (snapshot) => {
 
-    if(snapshot.val()==1) client.channels.cache
+    if(snapshot.val()==1) {client.channels.cache
       .get("944108911613579284")
-      .send(`Phát hiện xâm nhập trái phép lúc ${new Date()}!!!!`);
+      .send(`Phát hiện xâm nhập trái phép lúc ${new Date()}!!!!`);}
     
   });
 });
